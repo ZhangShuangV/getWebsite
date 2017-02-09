@@ -5,3 +5,19 @@
 
 ## 运行
 命令行输入：`node bianli.js`即可生成`self_Motion_data.js`，其中包含该路径下的所有index.html文件。
+
+## 定时任务
+创建一个.sh脚本 `bianli.sh` 通过 `vim bianli.sh`命令进入编辑模式
+将下面的路径修改成自己的路径
+`
+#!/bin/bash
+cd /opt/node_server/public/project
+/usr/bin/node /opt/node_server/public/project/bianli.js
+`
+第二行是进入项目所在路径。
+第三行的前半部分是node服务的路径，后半部分是要执行的js文件。
+修改完成后，通过命令`vim /etc/crontab`进入并编辑定时任务
+`
+*/1 * * * *     root    /bin/sh /opt/node_server/public/project/bianli.sh
+`
+里面都有具体说明，前面部分是定时任务执行的频率，最后一部分修改为要执行的sh脚本即可。
