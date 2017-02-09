@@ -29,3 +29,7 @@ cd /opt/node_server/public/project
 
 ## 完成 
 现在就可以通过定时任务每分钟自动生成文件啦，如果觉得频率太高，按照crontab里面的要求更改即可
+
+## 参考
+[CentOS和Linux使用crontab运行定时任务](http://www.thinkphp.cn/code/996.html)  
+[Linux下面使用命令如何运行.sh文件的两种解决办法](http://www.jb51.net/LINUXjishu/420989.html)
