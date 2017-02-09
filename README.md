@@ -1,5 +1,6 @@
 ## getWebsite
-该项目通过nodejs获取服务器中的html文件。   
+为了让公司前端组制作的demo能够更好的管理，自己用nodejs做了个抓取工具。
+该项目通过nodejs获取服务器中的html文件。   
 1. 将index.html中的第67行`if(arr[i].indexOf("zhangshuang") != -1)`中的zhangshuang改为自己服务器的ip或者域名。   
 2. 将bianli.js中的第59行`var url = '"www.zhangshuang.top/project' + item.path.slice(2) +'"';`中的`www.zhangshuang.top/project`改为自己的可访问路径。
 
