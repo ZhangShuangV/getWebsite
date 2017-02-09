@@ -10,11 +10,11 @@
 创建一个.sh脚本 `bianli.sh` 通过 `vim bianli.sh`命令进入编辑模式
 将下面的路径修改成自己的路径
 
-`
+```
 #!/bin/bash
 cd /opt/node_server/public/project
 /usr/bin/node /opt/node_server/public/project/bianli.js
-`
+```
 
 第二行是进入项目所在路径。
 第三行的前半部分是node服务的路径，后半部分是要执行的js文件。
