@@ -40,13 +40,15 @@ function writeFile(fileName,data) {
 }
 
 var filesList = geFileList("./");
-filesList.sort(sortHandler);
-function sortHandler(a,b) {
-    if(a.size > b.size)
-        return -1;
-    else if(a.size < b.size) return 1
-    return 0;
-}
+
+// 排序，基本也不需要
+// filesList.sort(sortHandler);
+// function sortHandler(a,b) {
+//     if(a.size > b.size)
+//         return -1;
+//     else if(a.size < b.size) return 1
+//     return 0;
+// }
 
 var arr = [],str = '';
 var regTitle = /<title>(.*?)<\/title>/i;
